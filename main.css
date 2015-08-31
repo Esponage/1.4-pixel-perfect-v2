@@ -1,0 +1,670 @@
+/*   overlay-blue: rgba(16, 107, 181, 1);
+     white: rgb(255, 255, 255);
+     a fantastic (dark blue): rgba(4, 51, 83, 1);
+    Anne Marie: rgba(2, 113, 181, 1);
+    ON Monday: rgba(158, 175, 188, 1);
+
+surfer 277 x 302
+comment font:  fa-comment-o [&#xf0e5;]
+color 1 (icon): rgba(93, 104, 111, 1)
+cloud upload:  fa-cloud-upload [&#xf0ee;]
+color 2 (words): rgba(163, 179, 191, 1)
+share post:  fa-share-square-o [&#xf045;]
+*/
+
+
+body {
+  width: 1300px;
+  height: 2104px;
+  font-family: "Oswald", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", sans-serif;
+}
+
+li {
+  display: inline-block;
+}
+
+.li-none {
+  display: block;
+}
+
+header {
+ max-width: 1300px;
+ height: 523px;
+ position: relative;
+  }
+
+  header::before {
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(http://feelgrafix.com/data_images/out/12/862903-ocean-waves-wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: -2;
+
+
+  }
+
+  header::after {
+    content: "";
+    background-color: rgba(16, 107, 181, .84);
+    position: absolute;
+    max-width: 1300px;
+    height: 523px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+
+.headertopbar{
+  max-width: 1004px;
+  height: 51px;
+  border-color: red;
+  position: relative;
+  margin-left: 136px;
+  clear: both;
+}
+
+
+.main-text {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-top: 133px;
+  margin-left: 7px;
+  margin-bottom: 0;
+  z-index: 1;
+  font-size: 100px;
+  clear: both;
+  word-spacing: -8px;
+  font-weight: 300;
+}
+
+.below-main-text {
+  text-align: center;
+  margin: -14px;
+  clear: both;
+  font-size: 15px;
+}
+
+/*
+=======================================
+MAIN ARTICLE
+=======================================
+*/
+
+
+.main-content {
+  width: 616px;
+  height: 1007px;
+  margin-top: 30px;
+  position: relative;
+  float: left;
+  margin-left: 161px;
+}
+
+
+.h1-fantastic {
+  color: rgb(4, 51, 83);
+  font-size: 63px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  font-family: "Oswald", sans-serif;
+  word-spacing: 0px;
+  line-height: 1.2;
+}
+
+.tinyhead {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+
+.small-guy-in-hat {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  padding-left: 4px;
+}
+
+.anne-marie {
+  color: rgba(2, 113, 181, 1);
+  position: relative;
+  font-size: 12px;
+  padding-left: 1px;
+  bottom: 4px;
+}
+
+.on {
+  color: rgba(158, 175, 188, 1);
+  font-size: 13px;
+  position: relative;
+  padding-left: 12px;
+  bottom: 4px;
+}
+
+.monday {
+  color: rgba(158, 175, 188, 1);
+  text-decoration: underline;
+  position: relative;
+  font-size: 12px;
+  bottom: 4px;
+  word-spacing: 3px;
+}
+
+
+.chicmixtape {
+  text-decoration: underline;
+  color: rgba(163, 179, 191, 1);
+}
+
+
+
+.pcolor {
+  color: rgba(126, 134, 140, 1);
+}
+
+
+.p1 {
+  position: relative;
+  margin-top: 33px;
+  padding-left: 3px;
+  word-spacing: 7px;
+}
+
+
+.p2 {
+  position: relative;
+  padding-left: 3px;
+  margin-top: 33px;
+  word-spacing: 5px;
+}
+
+
+.pipe {
+  color: rgba(211, 211, 211, 1);
+  font-size: 56px;
+  overflow: hidden;
+  font-weight: lighter
+}
+
+
+.h3-woah {
+  color: rgba(15, 109, 179, 1);
+  font-size: 27px;
+  margin: -11px;
+  padding-left: 8px;
+}
+
+
+.p3 {
+  position: relative;
+  margin-top: 41px;
+  margin-left: 4px;
+  word-spacing: 5.3px;
+  line-height: 25px;
+}
+
+
+.p4 {
+  margin-left: 3px;
+  margin-top: 33px;
+  word-spacing: 7.5px;
+  margin-bottom: 0;
+}
+
+
+/*
+======================================
+SOCIAL MEDIA BAR UNDER MAIN CONTENT
+======================================
+*/
+
+
+.fa-ul {
+  margin-left: 6px;
+  transition: background-color 300ms ease-in-out;
+
+}
+
+
+
+
+.fa-comment-o {
+  background-color: rgba(93, 104, 111, 1);
+  width: 33px;
+  height: 29px;
+  font-size: 21px;
+  color: white;
+  fill: white;
+  text-align: center;
+  padding-top: 1px;
+  margin-top: 7px;
+}
+
+
+.fa-comment-o:hover {
+  background-color: rgba(16, 107, 181, .9);
+}
+
+
+.read-comments {
+  width: 125px;
+  height: 30px;
+  background-color: rgba(163, 179, 191, 1);
+  margin-left: -3px;
+  top: -3px;
+  color: #FAFBFB;
+  font-size: 15px;
+  text-align: center;
+  word-spacing: -3px;
+  font-family: "open sans", sans-serif;
+}
+
+
+.read-comments:hover {
+  background-color: rgba(16, 107, 181, .9);
+}
+
+
+.fa-cloud-upload {
+  background-color: rgba(93, 104, 111, 1);
+  width: 33px;
+  height: 26px;
+  font-size: 17px;
+  color: white;
+  fill: white;
+  text-align: center;
+  margin-left: 5px;
+  padding-top: 5px;}
+
+
+  .fa-cloud-upload:hover {
+    background-color: rgba(16, 107, 181, .9);
+  }
+
+
+.read-later {
+  width: 95px;
+  height: 31px;
+  background-color: rgba(163, 179, 191, 1);
+  margin-left: -3px;
+  color: white;
+  font-family: "open sans";
+  font-size: 14px;
+  text-align: center;
+  top: -5px;
+  word-spacing: 2px;
+}
+
+
+.read-later:hover {
+  background-color: rgba(16, 107, 181, .9);
+}
+
+
+.fa-share-square-o {
+  background-color: rgba(93, 104, 111, 1);
+  width: 34px;
+  height: 23px;
+  font-size: 15px;
+  color: white;
+  fill: white;
+  position: relative;
+  margin-left: 7px;
+  bottom: 0px;
+  text-align: center;
+  padding-top: 7px;
+}
+
+
+.fa-share-square-o:hover {
+  background-color: rgba(16, 107, 181, .9);
+}
+
+
+.share-this-post {
+  width: 120px;
+  height: 24px;
+  background-color: rgba(163, 179, 191, 1);
+  margin-left: -3px;
+  padding-top: 6px;
+  text-align: center;
+  color: white;
+  font-size: 13px;
+  word-spacing: 4px;
+  font-weight: 100;
+  font-family: "open sans", sans-serif;
+}
+
+
+.share-this-post:hover {
+  background-color: rgba(16, 107, 181, .9);
+}
+
+
+/*
+============================================
+TOP BAR COMPLETE
+============================================
+*/
+
+.logo {
+  float:left;
+}
+
+.blog {
+  float: left;
+  padding-top: 17px;
+  word-spacing: 7px;
+  padding-left: 5px;
+  font-size: 16px;
+  font-weight: 900
+}
+
+
+.searchicon {
+  float: right;
+  padding-top: 13px;
+  padding-right: 2px;
+}
+
+
+.about {
+  float: right;
+  padding-top: 14px;
+  font-size: 17px;
+  padding-right: 18px;
+  font-weight: 800;
+}
+
+.search {
+  float: right;
+  padding-top: 14px;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+
+/*
+========================================
+Side Section COMPLETE
+========================================
+*/
+
+aside {
+  float: right;
+  margin-top: 71px;
+  margin-right: 76px;
+}
+
+.side-section {
+  width: 439px;
+  height: 1007px;
+  text-align: center;
+}
+
+.guy-in-hat {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  padding-right: 10px;
+}
+
+.anne-marie-side {
+  color: rgba(2, 113, 181, 1);
+  margin: 0;
+  font-size: 16px;
+  margin: 0;
+  padding-top: 10px;
+  padding-right: 5px;
+  font-size: 16px;
+  }
+
+
+.social-media {
+  padding-right: 50px;
+  font-size: 13px;
+  color: rgba(158, 175, 188, 1);
+  margin: 0;
+  word-spacing: 30px;
+}
+
+.woman-boarding {
+  padding-right: 9px;
+  padding-top: 49px;
+}
+
+.about-this-ad {
+  color: rgba(158, 175, 188, 1);
+  text-decoration: underline;
+  margin: 0;
+  padding-left: 184px;
+  font-family: "open sans";
+  font-size: 13px;
+  position: relative;
+  top: 2px;}
+
+.sidebar-section-heading {
+  color: rgba(2, 113, 181, 1);
+  font-size: 18px;
+  font-family: "oswald", sans-serif;
+  margin-top: 46px;
+  padding-right: 96px;
+}
+
+.sidebar-paragraph {
+  color: rgba(158, 175, 188, 1);
+  text-align: initial;
+  padding-left: 74px;
+  position: relative;
+  bottom: 13px;
+  font-weight: 100;
+  font-family: "open sans", sans-serif;
+  margin-top: 18px;
+  word-spacing: -2px;
+  font-size: 14px;
+  line-height: 24px;}
+
+
+/*
+========================================
+Most Popular
+========================================
+*/
+
+
+.most-popular {
+  height: 147px;
+  border-top: solid;
+  border-top-width: 2px;
+  position: relative;
+  border-color: rgba(225, 231, 234, 1);
+  clear: both;
+  text-align: center;
+  vertical-align: center;
+  font-size: 45px;
+  color: rgba(8, 52, 82, 1);
+  bottom: 80px;
+}
+
+
+.mph1 {
+  font-family: "oswald", sans-serif;
+  font-size: 62px;
+  font-weight: 100;
+  word-spacing: 7px;
+  margin: 0;
+  position: relative;
+  bottom: -24px;
+}
+
+/*
+========================================
+Four Pics
+========================================
+*/
+
+
+.footer-top {
+  width: 1300px;
+  height: 326px;
+  position: relative;
+  bottom: 96px;}
+
+.four-pics {
+  padding: 0;
+  position: relative;
+}
+
+
+.pseudopics::before {
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("http:placekitten.com/331/329");
+  position: absolute;
+  z-index: -2;
+}
+
+.pseudopics::after {
+  content: "";
+  background-color: rgba(16, 107, 181, .9);
+  position: absolute;
+  max-width: 331px;
+  height: 326px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transition: background-color 300ms ease-in-out;
+}
+
+.pseudopics:hover::after {
+  background-color: transparent;
+}
+
+
+.anothercoolpost {
+  position: relative;
+  font-size: 31px;
+  font-weight: 100;
+  font-family: "oswald", sans-serif;
+  margin-top: 277px;
+  margin-left: 15px;
+  color: rgba(7, 51, 81, 1);
+}
+
+
+.anothercoolpostlong {
+  position: relative;
+  font-size: 31px;
+  font-weight: 100;
+  font-family: "oswald", sans-serif;
+  margin-top: 241px;
+  margin-left: 15px;
+  line-height: 38px;
+  color: rgba(7, 51, 81, 1);
+}
+
+
+.anothercoolpost:hover {
+  color: white;
+}
+
+
+.anothercoolpostlong:hover {
+  color: white;
+}
+
+.img1 {
+  width: 325px;
+  height: 326px;
+  float: left;
+}
+
+.img2 {
+  width: 325px;
+  height: 326px;
+  float: left;
+}
+
+.img3 {
+  width: 325px;
+  height: 326px;
+  float: left;
+}
+
+.img4 {
+  width: 325px;
+  height: 326px;
+  float: left;
+}
+
+/*
+============================================
+Footer
+============================================
+*/
+
+
+.footer-bottom {
+  height: 97px;
+  background-color: rgb(4, 51, 83);
+  padding: 0;
+  margin: 0;
+  position: relative;
+  bottom: 96px;}
+
+.nav-bottom-left {
+  padding: 0;
+  margin: 0;
+  margin-left: 151px;
+}
+
+
+.logobottomleft {
+  position: relative;
+  top: 16px;
+}
+
+
+.ironcopyright {
+  position: relative;
+  bottom: 7px;
+  color: rgba(163, 179, 191, 1);
+  font-size: 13px;
+  font-family: "open sans";
+}
+
+.nav-bottom-right {
+  margin: 0;
+  float: right;
+  padding: 0;
+  position: relative;
+  right: 160px;
+  font-family: "open sans";
+  font-size: 13.8px;
+  bottom: 27px;
+  color: rgba(163, 179, 191, 1);
+}
+
+
+.nav1 {
+
+}
+
+/* TEST TEST TEST TEST TEST TEST*/
